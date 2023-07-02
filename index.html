@@ -10,6 +10,13 @@
       <h1>UP AND RUNNING ON AWS S3</h1>
     </center>
     <p id="date"></p>
+    <footer>
+      <center>
+      <a href='https://github.com/baimamboukar/'>
+        by @baimamboukar
+      </a>
+        </center>
+    </footer>
   </body>
   <style>
     body {
@@ -26,12 +33,23 @@
       color: #dd0808;
       font-weight: 600;
     }
+    a{
+      text-decoration: none;
+      color: 'green';
+    }
+    footer{
+      background-color: 'black';
+      height: 75px;
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+    }
   </style>
   <script>
     function getCurrentDateTime() {
       var currentDateTime = new Date();
       var formattedDateTime =
-        "Your local datetime" + 
+        "Your local datetime is: " + 
         currentDateTime.toDateString() +
         ", " +
         currentDateTime.toLocaleTimeString();
